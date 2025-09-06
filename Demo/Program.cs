@@ -1,4 +1,7 @@
-﻿namespace Demo
+﻿using Demo.Data;
+using static Demo.Data.ListGenerator;
+
+namespace Demo
 {
     internal class Program
     {
@@ -136,7 +139,10 @@
             #endregion
             #endregion
 
-
+            #region Data Setup
+            //Console.WriteLine(ProductsList[0]);
+            //Console.WriteLine(CustomersList[0]);
+            #endregion
         }
     }
 }
