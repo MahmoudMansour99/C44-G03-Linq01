@@ -1,4 +1,5 @@
 ﻿using Demo.Data;
+using System.Linq;
 using static Demo.Data.ListGenerator;
 
 namespace Demo
@@ -142,6 +143,32 @@ namespace Demo
             #region Data Setup
             //Console.WriteLine(ProductsList[0]);
             //Console.WriteLine(CustomersList[0]);
+            #endregion
+
+            #region Filtiration [Restriction] Operators - Where
+            //var Result = ProductsList.Where(P => P.UnitsInStock == 0);
+
+            //Result = from P in ProductsList
+            //         where P.UnitsInStock == 0
+            //         select P;
+
+            //foreach (var Unit in Result)
+            //{
+            //    Console.WriteLine(Unit);
+            //}
+
+            //var Result = ProductsList.Where(P => P.UnitsInStock > 0 && P.Category == "Meat/Poultry");
+
+            //Result = from P in ProductsList
+            //         where P.UnitsInStock > 0 && P.Category == "Meat/Poultry"
+            //         select P;
+
+            //Result = ProductsList.Where((P, I) => I < 10 && P.UnitsInStock == 0);
+
+            //foreach (var Unit in Result)
+            //{
+            //    Console.WriteLine(Unit);
+            //}
             #endregion
         }
     }
