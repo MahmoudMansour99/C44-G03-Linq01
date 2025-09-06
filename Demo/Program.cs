@@ -170,6 +170,75 @@ namespace Demo
             //    Console.WriteLine(Unit);
             //}
             #endregion
+
+            #region Transformation [Projection] Operators [Select, Select Many]
+            //var Result = ProductsList.Select(P => P.ProductName);
+
+            //Result = from PN in ProductsList
+            //         select PN.ProductName;
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //var Result = CustomersList.Select(C => C.CustomerName);
+
+            //Result = from C in CustomersList
+            //         select C.CustomerID;
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //var Result = CustomersList.Select(C => C.Orders).ToList();
+
+            //Result = from C in CustomersList
+            //         from O in C.Orders
+            //         select O;
+
+            //var Result = ProductsList.Select(P => new {  P.ProductID, P.ProductName});
+
+            //Result = from P in ProductsList
+            //         select new
+            //         {
+            //              P.ProductID,
+            //              P.ProductName,
+            //         };
+
+            //var Result = ProductsList.Where(P => P.UnitsInStock == 0).Select(P => new
+            //{
+            //    Id = P.ProductID,
+            //    Name = P.ProductName,
+            //    OldPrice = P.UnitPrice,
+            //    NewPrice = P.UnitPrice - (P.UnitPrice * 0.1M),
+            //});
+
+            //Result = from P in ProductsList
+            //         where P.UnitsInStock > 0
+            //         select new
+            //         {
+            //             Id = P.ProductID,
+            //             Name = P.ProductName,
+            //             OldPrice = P.UnitPrice,
+            //             NewPrice = P.UnitPrice - (P.UnitPrice * 0.1M)
+            //         };
+
+            //var Result = ProductsList.Where(P => P.UnitsInStock > 0)
+            //                         .Select((P, I) => new
+            //                         {
+            //                             Index = I,
+            //                             Name = P.ProductName
+            //                         });
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+
         }
     }
 }
