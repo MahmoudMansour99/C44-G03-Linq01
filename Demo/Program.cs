@@ -82,6 +82,33 @@
             //    Console.WriteLine(num);
             //}
             #endregion
+
+            #region Linq Syntax [Fluent - Query]
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            #region Fluent Syntax
+            //List<int> oddNumbers = Numbers.Where(num => num % 2 == 0).ToList();
+
+            //Fluent Syntax as a Static Method
+            //List<int> OddNumbers = Enumerable.Where(Numbers, num => num % 2 == 0).ToList();
+
+            //Fluent Syntax as an Extension Method { Recommended}
+            //List<int> oddNumbers = Numbers.Where(num => num % 2 == 0).ToList();
+
+            //Query 
+            #endregion
+
+            #region Query Syntax
+            //var OddNumbers = from N in Numbers
+            //                       where N % 2 == 1
+            //                       select N;
+
+            //foreach (var item in OddNumbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #endregion
         }
     }
 }
