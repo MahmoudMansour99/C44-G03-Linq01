@@ -40,7 +40,15 @@
 
             #endregion
 
+            #region Extension Method
+            //int X = 12345;
+            //int Y = X.Reverse();
+            //Console.WriteLine(Y);
 
+            //long A = 123456789156;
+            //long B = A.Reverse();
+            //Console.WriteLine(B);
+            #endregion
         }
     }
 }
