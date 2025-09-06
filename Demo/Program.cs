@@ -258,6 +258,16 @@ namespace Demo
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region Elemets Operator - Immediate Execution
+            //var Result = ProductsList.FirstOrDefault(P => P.UnitsInStock == 0);
+
+            //Result = ProductsList.LastOrDefault(P => P.UnitsInStock == 0);
+
+            //Console.WriteLine(Result);
+
+            //var Result = ProductsList.Single();
+            #endregion
         }
     }
 }
