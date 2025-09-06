@@ -238,7 +238,26 @@ namespace Demo
             //}
             #endregion
 
+            #region Ordering Operators
+            //var Result = ProductsList.OrderBy(P => P.UnitPrice);
 
+            //Result = from P in ProductsList
+            //         orderby P.UnitPrice
+            //         select P;
+
+            //var Result = ProductsList.OrderByDescending(P => P.UnitPrice);
+
+            //Result = from P in ProductsList
+            //         orderby P.UnitPrice descending
+            //         select P;
+
+            //var Result = ProductsList.OrderBy(P => P.UnitPrice).ThenByDescending(P => P.UnitsInStock).Reverse();
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
