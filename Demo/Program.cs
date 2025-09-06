@@ -71,6 +71,17 @@
 
             //var Emp06 = new { id = 10, Name = "Mona", Salary = 8000 };
             #endregion
+
+            #region What is LINQ
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //List<int> oddNumbers = Numbers.Where(num => num % 2 == 0).ToList();
+
+            //foreach (var num in oddNumbers)
+            //{
+            //    Console.WriteLine(num);
+            //}
+            #endregion
         }
     }
 }
