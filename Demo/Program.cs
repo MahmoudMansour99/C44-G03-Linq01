@@ -268,6 +268,18 @@ namespace Demo
 
             //var Result = ProductsList.Single();
             #endregion
+
+            #region Aggregate Operators [Immediate Execution]
+            //var Result = ProductsList.Max(P => P.ProductName.Length);
+
+            //string[] Names = { "Aya", "Mona", "Ahmed", "Mahmoud" };
+
+            //var Result = Names.Aggregate((str01, str02) => $"{str01} {str02}");
+
+            //Console.WriteLine(Result);
+
+            //Console.WriteLine(Result);
+            #endregion
         }
     }
 }
