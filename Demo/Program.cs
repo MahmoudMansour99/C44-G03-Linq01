@@ -49,6 +49,28 @@
             //long B = A.Reverse();
             //Console.WriteLine(B);
             #endregion
+
+            #region Anonymous Type
+            //Employee employee = new Employee() { Id = 10, Name = "Mona", Salary = 8000 };
+
+            //object Emp01 = new { Id = 10, Name = "Mona", Salary = 8000 };
+
+            //Console.WriteLine(Emp01);
+
+            //var Emp03 = new { Id = 10, Name = "Mona", Salary = 8000 };
+
+            //Console.WriteLine(Emp03.GetType().Name); // <>f__AnonymousType0`3
+
+            //var Emp04 = new { Id = Emp03.Id, Name = Emp03.Name, Salary = 5000 };
+
+            //Console.WriteLine(Emp04.GetType().Name);
+
+            //var Emp05 = Emp03 with { Salary = 4000 };
+
+            //Console.WriteLine(Emp05.GetType().Name);
+
+            //var Emp06 = new { id = 10, Name = "Mona", Salary = 8000 };
+            #endregion
         }
     }
 }
