@@ -109,6 +109,34 @@
             #endregion
 
             #endregion
+
+            #region Linq Execution Ways
+            #region Deffered Execution [Latest Version of Data]
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var oddNumbers = Numbers.Where(num => num % 2 == 1);
+
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14, 15 });
+
+            //foreach (var num in oddNumbers)
+            //{
+            //    Console.Write($"{num} ");
+            //}
+            #endregion
+
+            #region Immediate Execution
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var oddNumbers = Numbers.Where(num => num % 2 == 1).ToList();
+
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14, 15 });
+
+            //foreach (var num in oddNumbers)
+            //{
+            //    Console.Write($"{num} ");
+            //}
+            #endregion
+            #endregion
+
+
         }
     }
 }
